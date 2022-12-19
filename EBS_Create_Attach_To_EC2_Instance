@@ -1,0 +1,17 @@
+Create Volume in AWS EC2 Instance in Elastic Block Storage
+Open that created EBS & select attach volume in actions.
+Note: Make sure create volume must in same instance region. 
+Execute below commands in AWS EC2-Instance
+df -hT
+lsblk
+file -s /dev/xvdf
+sudo file -s /dev/xvdf
+mkfs -t ext4 /dev/xvdf
+sudo mkfs -t ext4 /dev/xvdf
+pwd
+mkdir ebs_volume
+mount /dev/xvdf /home/ubuntu/ebs_volume
+sudo mount /dev/xvdf /home/ubuntu/ebs_volume
+sudo df -hT
+umount /dev/xvdf
+resize2fs
