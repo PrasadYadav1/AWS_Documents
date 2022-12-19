@@ -13,5 +13,9 @@ mkdir ebs_volume
 mount /dev/xvdf /home/ubuntu/ebs_volume
 sudo mount /dev/xvdf /home/ubuntu/ebs_volume
 sudo df -hT
+##############Umount the EBS Volume###########
 umount /dev/xvdf
 resize2fs
+##############Modify_EBS_Volume###############
+modify ebs volume and run below command to reflect
+resize2fs /dev/xvdf
