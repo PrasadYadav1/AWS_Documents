@@ -1,2 +1,3 @@
 Connecting Multiple instances with a shared EFS
 Create EFS in AWS and then click on attach we will found 2 commands. We have to execute those commands in ec2 instances.
+We can able to seee mount point Once executed commands in EC2 Instance.
