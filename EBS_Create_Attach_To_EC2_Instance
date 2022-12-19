@@ -1,5 +1,5 @@
 Create Volume in AWS EC2 Instance in Elastic Block Storage
-Open that created EBS & select attach volume in actions.
+Open that created EBS & select attach volume in Actions.
 Note: Make sure create volume must in same instance region. 
 Execute below commands in AWS EC2-Instance
 df -hT
@@ -19,3 +19,13 @@ resize2fs
 ##############Modify_EBS_Volume###############
 modify ebs volume and run below command to reflect
 resize2fs /dev/xvdf
+
+#############EBS Snapshot ###################
+Select Create Snapshot in Actions. It will create a Snapshot of the volume
+
+############### Types of EBS in AWS #############
+General Purpose SSD
+Provisioned IOPS SSD
+Cold HDD
+Throughput Optimized HDD
+Magnatic(Standard)
